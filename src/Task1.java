@@ -10,4 +10,3 @@ public class Task1 {
                 .collect(Collectors.joining(", "));
     }
 }
-

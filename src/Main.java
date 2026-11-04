@@ -6,5 +6,9 @@ public class Main {
 
         System.out.println("Task 1: " + Task1.getOddIndexNames(names));
         System.out.println("Task 1 (empty): '" + Task1.getOddIndexNames(List.of()) + "'");
+
+        List<String> words = List.of("apple", "pear", "banana", "orange");
+        System.out.println("Task 2: " + Task2.sortDescendingUppercase(words));
+        System.out.println("Task 2 (empty): " + Task2.sortDescendingUppercase(List.of()));
     }
 }
