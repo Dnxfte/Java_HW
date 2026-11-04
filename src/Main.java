@@ -14,5 +14,13 @@ public class Main {
         String[] numbers = {"1, 2, 0", "4, 5"};
         System.out.println("Task 3: " + Task3.sortNumbers(numbers));
         System.out.println("Task 3 (empty): '" + Task3.sortNumbers(new String[0]) + "'");
+
+        long a = 25214903917L;
+        long c = 11L;
+        long m = 281474976710656L;
+        long seed = 1L; // A fixed seed makes the demonstration reproducible.
+        System.out.println("Task 4: " + Task4.generate(a, c, m, seed)
+                .limit(10)
+                .toList());
     }
 }
