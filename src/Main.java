@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,5 +23,18 @@ public class Main {
         System.out.println("Task 4: " + Task4.generate(a, c, m, seed)
                 .limit(10)
                 .toList());
+
+        System.out.println("Task 5: " + Task5.zip(
+                Stream.of("A", "B", "C"),
+                Stream.of("1", "2", "3", "4")
+        ).toList());
+        System.out.println("Task 5 (short second): " + Task5.zip(
+                Stream.of("A", "B"),
+                Stream.of("1")
+        ).toList());
+        System.out.println("Task 5 (empty): " + Task5.zip(
+                Stream.<String>empty(),
+                Stream.of("1", "2")
+        ).toList());
     }
 }
